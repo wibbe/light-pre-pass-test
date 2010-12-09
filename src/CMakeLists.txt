@@ -3,6 +3,7 @@ SET(SOURCE
   Main.cpp
   Utils.cpp
   HotValue.cpp
+  Mesh.cpp
   
   # SOIL Library
   SOIL/image_DXT.c

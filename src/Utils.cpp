@@ -18,3 +18,4 @@ namespace gl
      return SOIL_load_OGL_texture(filename.c_str(), 4, SOIL_CREATE_NEW_ID, 0);
    }
 }
+
