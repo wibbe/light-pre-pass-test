@@ -2,6 +2,8 @@
 SET(SOURCE
   Main.cpp
   Utils.cpp
+  HotValue.cpp
+  
   SOIL/image_DXT.c
   SOIL/SOIL.c
   SOIL/stb_image_aug.c

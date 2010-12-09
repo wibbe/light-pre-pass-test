@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include "Utils.hpp"
+#include "HotValue.hpp"
 
 void render();
 
@@ -11,6 +12,7 @@ int main(int argc, char * argv[])
    glutInitWindowSize(800, 500);
    glutCreateWindow("Light Pre-Pass Test");
    glutDisplayFunc(&render);
+   glutIdleFunc(&render);
    
    glutMainLoop();
    
@@ -19,6 +21,8 @@ int main(int argc, char * argv[])
 
 void render()
 {
+   updateHotValues();
+   
    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
    glClear(GL_COLOR_BUFFER_BIT);
    
