@@ -28,6 +28,11 @@ namespace math
 
          float x, y, z;
    };
+
+   inline float dot(Vector3 const& a, Vector3 const& b)
+   {
+     return a.x * b.x + a.y * b.y + a.z * b.z;
+   }
    
 }
 
