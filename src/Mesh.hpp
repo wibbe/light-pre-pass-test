@@ -23,11 +23,12 @@ namespace mesh
 
    struct GroupRaw
    {
-      GroupRaw(std::string const& _material)
-        : material(material)
+      GroupRaw(std::string const& _name)
+        : name(_name)
       { }
 
       std::vector<FaceRaw> faces;
+      std::string name;
       std::string material;
    };
 
