@@ -13,6 +13,13 @@ int main(int argc, char * argv[])
    glutCreateWindow("Light Pre-Pass Test");
    glutDisplayFunc(&render);
    glutIdleFunc(&render);
+
+   glewInit();
+   if (!GLEW_VERSION_2_0)
+   {
+      std::cerr << "OpenGL Version 2.0 not supported!" << std::endl;
+      return 1; 
+   }
    
    glutMainLoop();
    
