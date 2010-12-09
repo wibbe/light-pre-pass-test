@@ -15,6 +15,8 @@ int main(int argc, char * argv[])
    glutIdleFunc(&render);
 
    glewInit();
+
+   // Make sure we have OpenGL 2.0
    if (!GLEW_VERSION_2_0)
    {
       std::cerr << "OpenGL Version 2.0 not supported!" << std::endl;
@@ -35,3 +37,4 @@ void render()
    
    glutSwapBuffers();
 }
+

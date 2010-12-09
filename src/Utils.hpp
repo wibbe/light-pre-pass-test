@@ -10,10 +10,13 @@
 #include <GL/glut.h>
 #endif
 
+#include <string>
+
 namespace gl
 {
    
    GLuint makeBuffer(GLenum target, void const * bufferData, GLsizei bufferSize);
+   GLuint makeTexture(std::string const& filename);
    
 }
 
